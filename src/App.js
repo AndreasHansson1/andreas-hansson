@@ -1,26 +1,46 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Left from './components/Left/Left';
+import Right from './components/Right/Right';
+import styled from '@emotion/styled';
+
+const MainWrapper = styled('div')`
+  background-color: transparent;
+  max-width: 100%;
+  display: flex;
+  overflow: hidden;
+`;
 
 class App extends Component {
+  state = {
+    isActiveRight: false,
+    isActiveLeft: false
+  };
+
+  toggleStateRight = () => {
+    const currentState = this.state.isActiveRight;
+    this.setState({
+      isActiveRight: !currentState
+    });
+  };
+  toggleStateLeft = () => {
+    const currentState = this.state.isActiveLeft;
+    this.setState({
+      isActiveLeft: !currentState
+    });
+  };
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <MainWrapper>
+        <Left
+          toggleState={this.toggleStateLeft}
+          isActiveLeft={this.state.isActiveLeft}
+        />
+        <Right
+          toggleState={this.toggleStateRight}
+          isActiveRight={this.state.isActiveRight}
+        />
+      </MainWrapper>
     );
   }
 }
