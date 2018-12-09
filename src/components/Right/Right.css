@@ -1,0 +1,25 @@
+.rightSlider {
+  background-color: #333;
+  color: #fff;
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.5s ease-out;
+}
+
+.rightSlider.active {
+  right: -50vw;
+  width: 0;
+  transition: all 0.5s ease-in;
+}
+
+.rightSlider img:hover {
+  cursor: pointer;
+}
