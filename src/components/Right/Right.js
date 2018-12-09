@@ -4,7 +4,6 @@ import { css } from '@emotion/core';
 import RightUnder from './RightText';
 import { colors } from '../../theme';
 import './Right.css';
-import rightArrowWhite from '../../assets/images/right-arrow-white.png';
 
 // const RightSlider = styled('div')`
 //   background-color: ${colors.black};
@@ -38,7 +37,9 @@ import rightArrowWhite from '../../assets/images/right-arrow-white.png';
 
 const H2 = styled('h2')`
   padding-left: 5px;
-  padding-right: 1rem;
+  :hover {
+    cursor: pointer;
+  }
 `;
 
 const Right = props => {
@@ -53,9 +54,7 @@ const Right = props => {
             : 'rightSlider'
         }
       >
-        <H2>HANSSON</H2>
-
-        <img src={rightArrowWhite} alt="arrow" onClick={props.toggleState} />
+        <H2 onClick={props.toggleState}>HANSSON</H2>
       </div>
     </>
   );

@@ -2,14 +2,13 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { colors } from '../../theme';
 import { Cards } from './../Cards/Cards';
+import rightArrowBlack from '../../assets/images/right-arrow-black.png';
 
 const LeftText = styled('div')`
   background-color: ${colors.yellow};
   height: 100vh;
   width: 50%;
   position: relative;
-
-  transform: translateX(0);
 `;
 
 const text1 =
@@ -21,7 +20,7 @@ const LeftUnder = props => (
       <p>{text1}</p>
     </Cards>
 
-    <button onClick={props.toggleState}>X</button>
+    <img src={rightArrowBlack} alt="arrow" onClick={props.toggleState} />
   </LeftText>
 );
 

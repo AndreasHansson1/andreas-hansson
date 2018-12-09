@@ -7,8 +7,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 1;
-  visibility: visible;
   justify-content: flex-end;
   align-items: center;
   transition: all 0.5s ease-out;
@@ -16,6 +14,7 @@
 .leftSlider.active {
   left: -50vw;
   width: 0;
+  overflow: hidden;
   transition: all 0.5s ease-in;
 }
 
