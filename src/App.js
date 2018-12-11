@@ -33,8 +33,10 @@ class App extends Component {
   };
 
   animationStart = () => {
-    this.setState({ animation: true });
+    const currentState = this.state.animation;
+    this.setState({ animation: !currentState });
   };
+
   render() {
     return (
       <MainWrapper>

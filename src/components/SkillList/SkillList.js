@@ -5,7 +5,7 @@ import { jsx, css } from '@emotion/core';
 import { colors } from '../../theme';
 
 const ListWrapper = styled('div')`
-  color: #333;
+  color: ${colors.black};
   min-width: 55%;
   display: flex;
   justify-content: center;
@@ -19,81 +19,73 @@ const UL = styled('ul')`
   list-style: none;
   padding: 0;
   text-decoration: none;
-  li {
-    margin: 1rem;
-    font-size: 1.2rem;
-  }
 `;
 
-const animation = css`
-  animation-duration: 2s;
+const LI = styled('li')`
+  margin: 1rem;
+  margin-left: 0;
+  font-size: 1.2rem;
+  animation-duration: 3s;
   animation-name: slidein;
+  :nth-child(1) {
+    animation-delay: 0s;
+  }
+  :nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  :nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  :nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  :nth-child(5) {
+    animation-delay: 0.8s;
+  }
+  :nth-child(6) {
+    animation-delay: 1s;
+  }
+  :nth-child(7) {
+    animation-delay: 1.2s;
+  }
+  :nth-child(8) {
+    animation-delay: 1.4s;
+  }
+  :nth-child(9) {
+    animation-delay: 1.6s;
+  }
+  :nth-child(10) {
+    animation-delay: 1.8s;
+  }
 
   @keyframes slidein {
     from {
-      margin-left: 100%;
+      margin-left: 150%;
       opacity: 0;
       to {
         margin-left: 0%;
-        opacity: 1;
+        opacity: ;
       }
     }
   }
 `;
-const Li1 = styled('li')`
-  ${animation};
-  animation-delay: 1s;
-`;
-const Li2 = styled('li')`
-  ${animation};
-  animation-delay: 1.1s;
-`;
-const Li3 = styled('li')`
-  ${animation};
-  animation-delay: 1.2s;
-`;
-const Li4 = styled('li')`
-  ${animation};
-  animation-delay: 1.3s;
-`;
-const Li5 = styled('li')`
-  ${animation};
-  animation-delay: 1.4s;
-`;
-const Li6 = styled('li')`
-  ${animation};
-  animation-delay: 1.5s;
-`;
-const Li7 = styled('li')`
-  ${animation};
-  animation-delay: 1.6s;
-`;
-const Li8 = styled('li')`
-  ${animation};
-  animation-delay: 1.7s;
-`;
-const Li9 = styled('li')`
-  ${animation};
-  animation-delay: 1.8s;
-`;
-const Li10 = styled('li')`
-  ${animation};
-  animation-delay: 1.9s;
-`;
 
-export const SkillList = () => (
+const listItems = [
+  'JavaScript',
+  'React',
+  'Git',
+  'SASS',
+  'Emotion',
+  'Node.js',
+  'Scrum',
+  'PHP/MySQL',
+  'Photoshop'
+];
+
+const list = listItems.map((item, index) => <LI key={index}>{item}</LI>);
+
+export const SkillList = props => (
   <ListWrapper>
-    <UL>
-      <Li1>HTML/CSS</Li1>
-      <Li2>JavaScript</Li2>
-      <Li3>React</Li3>
-      <Li4>Git</Li4>
-      <Li5>SASS</Li5>
-      <Li6>Emotion</Li6>
-      <Li7>Node.js</Li7>
-      <Li8>Scrum</Li8>
-      <Li9>PHP/MySQL</Li9>
-      <Li10>Photoshop</Li10>
-    </UL>
+    <UL>{props.animation ? list : null}</UL>
   </ListWrapper>
 );
