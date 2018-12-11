@@ -1,8 +1,9 @@
+/** @jsx jsx */
 import React, { Component } from 'react';
-
 import Left from './components/Left/Left';
 import Right from './components/Right/Right';
 import styled from '@emotion/styled';
+import { jsx, css } from '@emotion/core';
 
 const MainWrapper = styled('div')`
   background-color: transparent;
@@ -39,7 +40,13 @@ class App extends Component {
 
   render() {
     return (
-      <MainWrapper>
+      <MainWrapper
+        css={css`
+          @media (min-width: 800px) {
+            flex-directions: column;
+          }
+        `}
+      >
         <Left
           toggleState={this.toggleStateLeft}
           isActiveLeft={this.state.isActiveLeft}

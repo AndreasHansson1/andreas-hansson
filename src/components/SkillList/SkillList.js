@@ -5,12 +5,13 @@ import { jsx, css } from '@emotion/core';
 import { colors } from '../../theme';
 
 const ListWrapper = styled('div')`
+  background-color: ${colors.white};
   color: ${colors.black};
-  min-width: 55%;
+  max-width: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0 1rem;
   flex-wrap: wrap;
   margin: 0.5rem;
 `;
@@ -22,52 +23,63 @@ const UL = styled('ul')`
 `;
 
 const LI = styled('li')`
-  margin: 1rem;
-  margin-left: 0;
+  margin-bottom: 0.7rem;
   font-size: 1.2rem;
   animation-duration: 3s;
   animation-name: slidein;
-  :nth-child(1) {
+  :nth-of-type(1) {
     animation-delay: 0s;
   }
-  :nth-child(2) {
+  :nth-of-type(2) {
     animation-delay: 0.2s;
   }
-  :nth-child(3) {
+  :nth-of-type(3) {
     animation-delay: 0.4s;
   }
-  :nth-child(4) {
+  :nth-of-type(4) {
     animation-delay: 0.6s;
   }
-  :nth-child(5) {
+  :nth-of-type(5) {
     animation-delay: 0.8s;
   }
-  :nth-child(6) {
+  :nth-of-type(6) {
     animation-delay: 1s;
   }
-  :nth-child(7) {
+  :nth-of-type(7) {
     animation-delay: 1.2s;
   }
-  :nth-child(8) {
+  :nth-of-type(8) {
     animation-delay: 1.4s;
   }
-  :nth-child(9) {
+  :nth-of-type(9) {
     animation-delay: 1.6s;
   }
-  :nth-child(10) {
+  :nth-of-type(10) {
     animation-delay: 1.8s;
+  }
+  ::before {
+    opacity: 0;
   }
 
   @keyframes slidein {
     from {
-      margin-left: 150%;
+      margin-left: 100%;
+      width: 300%;
+      visibility: visible;
       opacity: 0;
       to {
         margin-left: 0%;
-        opacity: ;
+        width: 100%;
+        visibility: visible;
+        opacity: 1;
       }
     }
   }
+`;
+
+const H2 = styled('h2')`
+  padding-bottom: 0;
+  margin-bottom: 0;
 `;
 
 const listItems = [
@@ -86,6 +98,7 @@ const list = listItems.map((item, index) => <LI key={index}>{item}</LI>);
 
 export const SkillList = props => (
   <ListWrapper>
+    <H2>Skills</H2>
     <UL>{props.animation ? list : null}</UL>
   </ListWrapper>
 );
