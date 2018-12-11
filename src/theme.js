@@ -1,1 +1,1 @@
-export const colors = { black: '#333', white: '#fff', yellow: '#F4E484' };
+export const colors = { black: '#333', white: '#fff', yellow: '#fffeb0' };

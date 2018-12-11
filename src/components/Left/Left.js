@@ -14,7 +14,7 @@ const H2 = styled('h2')`
 const Left = props => {
   return (
     <>
-      <LeftUnder toggleState={props.toggleState} />
+      <LeftUnder toggleState={props.toggleState} animation={props.animation} />
 
       <div
         className={

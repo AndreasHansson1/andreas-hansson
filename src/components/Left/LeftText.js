@@ -1,25 +1,28 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { colors } from '../../theme';
-import { Cards } from './../Cards/Cards';
+import { Contact } from './../Contact/Contact';
+import { SkillList } from './../SkillList/SkillList';
 import rightArrowBlack from '../../assets/images/right-arrow-black.png';
 
 const LeftText = styled('div')`
-  background-color: ${colors.yellow};
+  background-color: ${colors.white};
   height: 100vh;
   width: 50%;
   position: relative;
 `;
 
-const text1 =
-  ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, fugiat?';
+const ContactSkillWrapper = styled('div')`
+  display: flex;
+`;
 
 const LeftUnder = props => (
   <LeftText>
-    <Cards>
-      <p>{text1}</p>
-    </Cards>
+    <ContactSkillWrapper>
+      <Contact />
 
+      <SkillList animation={props.animation} />
+    </ContactSkillWrapper>
     <img src={rightArrowBlack} alt="arrow" onClick={props.toggleState} />
   </LeftText>
 );

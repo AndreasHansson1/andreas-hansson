@@ -14,7 +14,8 @@ const MainWrapper = styled('div')`
 class App extends Component {
   state = {
     isActiveRight: false,
-    isActiveLeft: false
+    isActiveLeft: false,
+    animation: false
   };
 
   toggleStateRight = () => {
@@ -28,6 +29,11 @@ class App extends Component {
     this.setState({
       isActiveLeft: !currentState
     });
+    this.animationStart();
+  };
+
+  animationStart = () => {
+    this.setState({ animation: true });
   };
   render() {
     return (
@@ -35,6 +41,7 @@ class App extends Component {
         <Left
           toggleState={this.toggleStateLeft}
           isActiveLeft={this.state.isActiveLeft}
+          animation={this.state.animation}
         />
         <Right
           toggleState={this.toggleStateRight}
