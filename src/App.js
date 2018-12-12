@@ -4,9 +4,10 @@ import Left from './components/Left/Left';
 import Right from './components/Right/Right';
 import styled from '@emotion/styled';
 import { jsx, css } from '@emotion/core';
+import { colors } from './theme';
 
 const MainWrapper = styled('div')`
-  background-color: transparent;
+  background-color: ${colors.black};
   max-width: 100%;
   display: flex;
   overflow: hidden;
@@ -15,8 +16,7 @@ const MainWrapper = styled('div')`
 class App extends Component {
   state = {
     isActiveRight: false,
-    isActiveLeft: false,
-    animation: false
+    isActiveLeft: false
   };
 
   toggleStateRight = () => {
@@ -30,12 +30,6 @@ class App extends Component {
     this.setState({
       isActiveLeft: !currentState
     });
-    this.animationStart();
-  };
-
-  animationStart = () => {
-    const currentState = this.state.animation;
-    this.setState({ animation: !currentState });
   };
 
   render() {
@@ -50,7 +44,6 @@ class App extends Component {
         <Left
           toggleState={this.toggleStateLeft}
           isActiveLeft={this.state.isActiveLeft}
-          animation={this.state.animation}
         />
         <Right
           toggleState={this.toggleStateRight}

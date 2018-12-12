@@ -7,7 +7,7 @@ import avatar from '../../assets/images/avatar.jpg';
 import { Interests } from './../Interests/Interests';
 
 const CoverWrapper = styled('div')`
-  background-color: ${colors.yellow};
+  background-color: ${colors.white};
   color: ${colors.black};
   width: 90%;
   height: 95%;
@@ -45,7 +45,7 @@ const A = styled('a')`
   }
 `;
 
-export const CoverText = () => (
+export const CoverText = props => (
   <CoverWrapper>
     <Avatar alt="avatar" src={avatar} />
     <H2>About Me</H2>
@@ -66,6 +66,6 @@ export const CoverText = () => (
       Best <br />
       Andreas Hansson
     </P>
-    <Interests />
+    <Interests isActiveRight={props.isActiveRight} />
   </CoverWrapper>
 );

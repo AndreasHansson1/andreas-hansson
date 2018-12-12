@@ -5,8 +5,8 @@ import { jsx, css } from '@emotion/core';
 import { colors } from '../../theme';
 
 const WorkWrapper = styled('div')`
-  background-color: ${colors.white};
-  color: #333;
+  background-color: ${colors.grey};
+  color: ${colors.black};
   width: 90%;
   margin: auto;
   display: flex;

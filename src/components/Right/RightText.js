@@ -21,7 +21,7 @@ const Button = styled('button')`
 const RightUnder = props => (
   <RightText>
     <Button onClick={props.toggleState}>X</Button>
-    <CoverText />
+    <CoverText isActiveRight={props.isActiveRight} />
   </RightText>
 );
 

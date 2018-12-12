@@ -96,6 +96,6 @@ const list = listItems.map((item, index) => <LI key={index}>{item}</LI>);
 export const SkillList = props => (
   <ListWrapper>
     <H2>Skills</H2>
-    <UL>{props.animation ? list : null}</UL>
+    <UL>{props.isActiveLeft ? list : null}</UL>
   </ListWrapper>
 );

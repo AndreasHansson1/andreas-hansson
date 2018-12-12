@@ -5,7 +5,7 @@ import { jsx, css } from '@emotion/core';
 import { colors } from '../../theme';
 
 const EducationWrapper = styled('div')`
-  background-color: ${colors.yellow};
+  background-color: ${colors.gray};
   color: ${colors.black};
   width: 90%;
   margin: auto;

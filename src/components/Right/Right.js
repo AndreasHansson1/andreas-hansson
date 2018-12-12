@@ -15,7 +15,10 @@ const H2 = styled('h2')`
 const Right = props => {
   return (
     <>
-      <RightUnder toggleState={props.toggleState} />
+      <RightUnder
+        toggleState={props.toggleState}
+        isActiveRight={props.isActiveRight}
+      />
 
       <div
         className={

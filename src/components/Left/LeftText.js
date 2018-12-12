@@ -7,7 +7,7 @@ import { Education } from './../Education/Education';
 import { Work } from './../Work/Work';
 
 const LeftText = styled('div')`
-  background-color: ${colors.grey};
+  background-color: ${colors.white};
   color: ${colors.black};
   height: 100vh;
   width: 50%;
@@ -35,7 +35,7 @@ const LeftUnder = props => (
       <Work />
     </ContactWorkWrapper>
     <SkillEducationWrapper>
-      <SkillList animation={props.animation} />
+      <SkillList isActiveLeft={props.isActiveLeft} />
       <Education />
     </SkillEducationWrapper>
   </LeftText>
