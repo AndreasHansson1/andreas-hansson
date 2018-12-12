@@ -6,7 +6,7 @@ import { colors } from '../../theme';
 
 const EducationWrapper = styled('div')`
   background-color: ${colors.gray};
-  color: ${colors.black};
+  color: ${colors.white};
   width: 90%;
   margin: auto;
   display: flex;

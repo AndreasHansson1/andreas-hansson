@@ -6,7 +6,7 @@ import { CoverText } from './../CoverText/CoverText';
 import { colors } from '../../theme';
 
 const RightText = styled('div')`
-  background-color: ${colors.grey};
+  background-color: ${colors.white};
   height: 100vh;
   width: 50%;
   position: relative;

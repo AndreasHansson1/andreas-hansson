@@ -5,14 +5,19 @@ import { jsx, css } from '@emotion/core';
 import { colors } from '../../theme';
 
 const ContactWrapper = styled('div')`
-  background-color: ${colors.yellow};
+  background-image: linear-gradient(
+    ${colors.lightOrange},
+    ${colors.orange},
+    ${colors.darkOrange}
+  );
   color: #333;
+  border-right: 1px solid ${colors.black};
   max-width: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 1rem;
-  margin: 0.5rem 0.5rem 0 0.5rem;
+  margin: 0.5rem 0 0 0.5rem;
 `;
 
 const A = styled('a')`

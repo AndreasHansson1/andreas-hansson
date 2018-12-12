@@ -12,18 +12,18 @@ import hiking from '../../assets/images/hiking.svg';
 import hammock from '../../assets/images/hammock.svg';
 
 const InterestsWrapper = styled('div')`
-  background-color: ${colors.white};
-  color: ${colors.black};
-  width: 90%;
-  height: 40%;
-  margin: auto;
+  background-color: ${colors.darkOrange};
+  color: ${colors.black}
+  width: 100%
+  height: 50vh;;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1rem;
   flex-wrap: wrap;
-  margin: 0.5rem;
+  
 `;
 
 const IconDiv = styled('div')`

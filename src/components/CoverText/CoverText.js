@@ -9,21 +9,20 @@ import { Interests } from './../Interests/Interests';
 const CoverWrapper = styled('div')`
   background-color: ${colors.white};
   color: ${colors.black};
-  width: 90%;
-  height: 95%;
-  margin: auto;
+  width: 100%;
+  height: 100%;
   display: flex;
-
+  padding-top: 0.5rem;
   justify-content: space-around;
-  padding: 1rem;
+
   flex-wrap: wrap;
-  margin: 0.5rem;
 `;
 
 const Avatar = styled.img`
   width: 96px;
   height: 96px;
   border-radius: 50%;
+  margin: 0.5rem;
 `;
 
 const H2 = styled('h2')`
@@ -31,11 +30,12 @@ const H2 = styled('h2')`
   width: 10rem;
   padding: 5px;
   text-align: center;
-  background-color: ${colors.black};
-  color: ${colors.white};
+  background-color: ${colors.lightOrange};
+  color: ${colors.black};
 `;
 
 const P = styled('p')`
+  margin: 0 1rem;
   line-height: 1.5;
 `;
 

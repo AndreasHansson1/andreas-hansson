@@ -5,7 +5,11 @@ import { jsx, css } from '@emotion/core';
 import { colors } from '../../theme';
 
 const WorkWrapper = styled('div')`
-  background-color: ${colors.grey};
+  background-image: linear-gradient(
+    ${colors.lightOrange},
+    ${colors.orange},
+    ${colors.darkOrange}
+  );
   color: ${colors.black};
   width: 90%;
   margin: auto;
@@ -14,10 +18,12 @@ const WorkWrapper = styled('div')`
   padding: 1rem;
   flex-wrap: wrap;
   margin: 0.5rem 0.5rem 0 0;
+  @media (min-width: 760px) {
+    clip-path: polygon(0 0, 100% 0, 100% 48vh, 0 100%);
+  }
 `;
 
 const H3 = styled('h3')`
-  background-color: ${colors.yellow};
   max-width: 55%;
 `;
 

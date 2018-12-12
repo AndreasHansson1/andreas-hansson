@@ -7,7 +7,7 @@ import { jsx, css } from '@emotion/core';
 import { colors } from './theme';
 
 const MainWrapper = styled('div')`
-  background-color: ${colors.black};
+  background-color: ${colors.darkGrey};
   max-width: 100%;
   display: flex;
   overflow: hidden;

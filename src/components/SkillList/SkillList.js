@@ -5,15 +5,17 @@ import { jsx, css } from '@emotion/core';
 import { colors } from '../../theme';
 
 const ListWrapper = styled('div')`
-  background-color: ${colors.white};
-  color: ${colors.black};
+  background-color: ${colors.black};
+  color: ${colors.white};
   max-width: 35%;
   display: flex;
+  border-right: 1px solid ${colors.white};
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
   flex-wrap: wrap;
   margin: 0.5rem;
+  overflow: hidden;
 `;
 
 const UL = styled('ul')`
@@ -25,8 +27,7 @@ const UL = styled('ul')`
 const LI = styled('li')`
   margin-bottom: 0.7rem;
   font-size: 1.2rem;
-  animation-duration: 3s;
-  animation-name: slidein;
+  animation: slideIn 3s ease-in-out 0.5s;
   animation-fill-mode: backwards;
 
   :nth-of-type(1) {
@@ -60,7 +61,7 @@ const LI = styled('li')`
     animation-delay: 1.8s;
   }
 
-  @keyframes slidein {
+  @keyframes slideIn {
     from {
       margin-left: 100%;
       width: 300%;

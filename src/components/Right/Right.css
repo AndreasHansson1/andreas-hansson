@@ -1,13 +1,13 @@
 .rightSlider {
-  background-color: #333;
-  color: #fff;
+  background-color: #393939;
+  color: #fefefa;
   height: 100vh;
   width: 50%;
   display: flex;
   position: absolute;
   top: 0;
   right: 0;
-
+  z-index: 2;
   justify-content: flex-start;
   align-items: center;
   transition: all 0.5s ease-out;

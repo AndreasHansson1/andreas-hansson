@@ -7,8 +7,8 @@ import { Education } from './../Education/Education';
 import { Work } from './../Work/Work';
 
 const LeftText = styled('div')`
-  background-color: ${colors.white};
-  color: ${colors.black};
+  background-color: ${colors.black};
+  color: ${colors.white};
   height: 100vh;
   width: 50%;
   position: relative;
@@ -16,8 +16,9 @@ const LeftText = styled('div')`
 
 const Button = styled('button')`
   position: fixed;
-  top: 7px;
-  left: 47vw;
+  z-index: 1;
+  top: 9px;
+  left: 44vw;
 `;
 const ContactWorkWrapper = styled('div')`
   display: flex;
