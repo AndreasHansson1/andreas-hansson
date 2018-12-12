@@ -22,7 +22,11 @@ const Avatar = styled.img`
   width: 96px;
   height: 96px;
   border-radius: 50%;
-  margin: 0.5rem;
+  margin: 1rem;
+  @media (min-width: 760px) {
+    width: 130px;
+    height: 130px;
+  }
 `;
 
 const H2 = styled('h2')`

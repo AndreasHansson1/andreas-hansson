@@ -14,11 +14,25 @@ const LeftText = styled('div')`
   position: relative;
 `;
 
-const Button = styled('button')`
-  position: fixed;
+const Button = styled('a')`
+  position: absolute;
   z-index: 1;
-  top: 9px;
-  left: 44vw;
+  top: 5px;
+  right: 5px;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: 900;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  :hover {
+    cursor: pointer;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  }
+  :active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+  }
 `;
 const ContactWorkWrapper = styled('div')`
   display: flex;

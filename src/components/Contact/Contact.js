@@ -10,8 +10,8 @@ const ContactWrapper = styled('div')`
     ${colors.orange},
     ${colors.darkOrange}
   );
-  color: #333;
-  border-right: 1px solid ${colors.black};
+  color: ${colors.black};
+  border-right: 5px solid ${colors.black};
   max-width: 3rem;
   display: flex;
   flex-direction: column;
