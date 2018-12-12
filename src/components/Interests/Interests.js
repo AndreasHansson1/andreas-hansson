@@ -3,19 +3,19 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { jsx, css } from '@emotion/core';
 import { colors } from '../../theme';
-import wine from '../../assets/images/wine.png';
-import jogging from '../../assets/images/jogging.png';
-import golf from '../../assets/images/birdie.png';
-import family from '../../assets/images/family.png';
-import cableCar from '../../assets/images/cable-car-cabin.png';
-import mountain from '../../assets/images/mountain.png';
-import airplane from '../../assets/images/airplane.png';
+import wine from '../../assets/images/wine.svg';
+import run from '../../assets/images/run.svg';
+import golf from '../../assets/images/golf-field.svg';
+import family from '../../assets/images/family.svg';
+import ski from '../../assets/images/ski.svg';
+import hiking from '../../assets/images/hiking.svg';
+import hammock from '../../assets/images/hammock.svg';
 
 const InterestsWrapper = styled('div')`
   background-color: ${colors.yellow};
   color: #333;
   width: 90%;
-  height: 35%;
+  height: 40%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -26,16 +26,28 @@ const InterestsWrapper = styled('div')`
 
 const IconDiv = styled('div')`
 display: flex;
+flex-wrap: wrap;
 justify-content: space-around;
 width: 90%
 margin: auto;
 `;
 
 const Img = styled('img')`
-  width: 32px;
-  height: 32px;
+  position: absolute;
+  bottom: 20%;
+  right: 40%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid ${colors.black};
+  margin: 0.5rem;
+  :hover {
+    position: static;
+    bottom: 0;
+    right: 0;
+  }
 `;
-const iconList = [wine, jogging, golf, family, cableCar, mountain, airplane];
+const iconList = [wine, hiking, golf, family, ski, run, hammock];
 
 const list = iconList.map((item, index) => <Img key={index} src={item} />);
 

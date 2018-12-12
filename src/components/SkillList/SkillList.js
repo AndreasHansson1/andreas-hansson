@@ -27,6 +27,8 @@ const LI = styled('li')`
   font-size: 1.2rem;
   animation-duration: 3s;
   animation-name: slidein;
+  animation-fill-mode: backwards;
+
   :nth-of-type(1) {
     animation-delay: 0s;
   }
@@ -57,20 +59,15 @@ const LI = styled('li')`
   :nth-of-type(10) {
     animation-delay: 1.8s;
   }
-  ::before {
-    opacity: 0;
-  }
 
   @keyframes slidein {
     from {
       margin-left: 100%;
       width: 300%;
-      visibility: visible;
       opacity: 0;
       to {
         margin-left: 0%;
         width: 100%;
-        visibility: visible;
         opacity: 1;
       }
     }
@@ -83,6 +80,7 @@ const H2 = styled('h2')`
 `;
 
 const listItems = [
+  'HTML/CSS',
   'JavaScript',
   'React',
   'Git',
@@ -90,8 +88,7 @@ const listItems = [
   'Emotion',
   'Node.js',
   'Scrum',
-  'PHP/MySQL',
-  'Photoshop'
+  'PHP/MySQL'
 ];
 
 const list = listItems.map((item, index) => <LI key={index}>{item}</LI>);
