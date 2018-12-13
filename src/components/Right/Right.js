@@ -7,6 +7,14 @@ import './Right.css';
 
 const H2 = styled('h2')`
   padding-left: 5px;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    ${colors.orange},
+    ${colors.darkOrange}
+  );
+  -webkit-background-clip: text;
+  color: transparent;
   :hover {
     cursor: pointer;
   }
