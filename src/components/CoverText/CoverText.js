@@ -22,7 +22,7 @@ const H2 = styled('h2')`
   padding: 5px;
   margin-right: 0.5rem;
   text-align: center;
-  background-color: ${colors.secondary};
+
   color: ${colors.black};
 `;
 
