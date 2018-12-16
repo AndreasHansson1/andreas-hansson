@@ -8,7 +8,6 @@ import { Work } from './../Work/Work';
 
 const LeftText = styled('div')`
   background-color: ${colors.black};
-  color: ${colors.white};
   height: 100vh;
   width: 50%;
   position: relative;
@@ -16,7 +15,8 @@ const LeftText = styled('div')`
 
 const Button = styled('a')`
   position: absolute;
-  z-index: 1;
+  color: ${colors.black},
+  z-index: 5;
   top: 5px;
   right: 5px;
   text-decoration: none;

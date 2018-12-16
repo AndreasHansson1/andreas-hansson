@@ -6,12 +6,11 @@ import { colors } from '../../theme';
 
 const ContactWrapper = styled('div')`
   background-image: linear-gradient(
-    ${colors.lightOrange},
-    ${colors.orange},
-    ${colors.darkOrange}
+    ${colors.primaryLight},
+    ${colors.primaryDark}
   );
   color: ${colors.black};
-  border-right: 5px solid ${colors.black};
+  border-right: 8px solid ${colors.black};
   max-width: 3rem;
   display: flex;
   flex-direction: column;

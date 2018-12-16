@@ -9,9 +9,8 @@ const H2 = styled('h2')`
   padding-left: 5px;
   display: inline-block;
   background-image: linear-gradient(
-    to right,
-    ${colors.orange},
-    ${colors.darkOrange}
+    ${colors.primaryLight},
+    ${colors.primaryDark}
   );
   -webkit-background-clip: text;
   color: transparent;

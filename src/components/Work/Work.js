@@ -6,9 +6,8 @@ import { colors } from '../../theme';
 
 const WorkWrapper = styled('div')`
   background-image: linear-gradient(
-    ${colors.lightOrange},
-    ${colors.orange},
-    ${colors.darkOrange}
+    ${colors.primaryLight},
+    ${colors.primaryDark}
   );
   color: ${colors.black};
   width: 90%;
@@ -18,9 +17,7 @@ const WorkWrapper = styled('div')`
   padding: 1rem;
   flex-wrap: wrap;
   margin: 0.5rem 0.5rem 0 0;
-  @media (min-width: 760px) {
-    clip-path: polygon(0 0, 100% 0, 100% 48vh, 0 100%);
-  }
+  border-radius: 0 0 10rem 0;
 `;
 
 const H3 = styled('h3')`
