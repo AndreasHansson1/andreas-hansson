@@ -56,13 +56,13 @@ export const CoverText = props => (
         you see my courses. I did one internship at a digital agency called
         Glomo at the end of 2018. At Glomo I mostly worked on their own site,
         built with React on the frontend and Wordpress as backend. It was fun
-        and did learned a lot! <br />
+        and did learn a lot! <br />
         <br />
         As a person I am pretty calm and always tries to do my best. I am loyal
         and have high integrity. I am married and have two kids. I like to
-        train, but can not do it as often as before. I have decided to complete
-        a marathon during 2019 thou. I also like to play golf, padel, fishing
-        and to cook food.
+        workout, but can not do it as often as before. I have decided to
+        complete a marathon during 2019 thou and is excited about that. I also
+        like to play golf, padel, fishing cook food and loves to ski.
         <br />
         <br />
         Best <br />

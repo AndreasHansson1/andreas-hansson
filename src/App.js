@@ -8,7 +8,8 @@ import { colors } from './theme';
 
 const MainWrapper = styled('div')`
   background-color: ${colors.darkGrey};
-  max-width: 1200px;
+  max-width: 1400px;
+  border-right: 1px solid ${colors.black};
   margin: auto;
   display: flex;
   overflow: hidden;
