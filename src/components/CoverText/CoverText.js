@@ -3,7 +3,6 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { jsx } from '@emotion/core';
 import { colors } from '../../theme';
-import { Interests } from './../Interests/Interests';
 
 const CoverWrapper = styled('div')`
   background-color: transparent;
@@ -22,7 +21,7 @@ const H2 = styled('h2')`
   padding: 5px;
   margin-right: 0.5rem;
   text-align: center;
-
+  background-color: ${colors.primaryLight};
   color: ${colors.black};
 `;
 
@@ -42,7 +41,7 @@ const A = styled('a')`
 
 export const CoverText = props => (
   <CoverWrapper>
-    <H2>About Me</H2>
+    <H2>Cover Letter</H2>
 
     <ParagraphWrapper>
       <P>
@@ -54,15 +53,21 @@ export const CoverText = props => (
           {' '}
           HERE{' '}
         </A>
-        you see my courses. I´ve done one internship at a digital agency called
+        you see my courses. I did one internship at a digital agency called
         Glomo at the end of 2018. At Glomo I mostly worked on their own site,
         built with React on the frontend and Wordpress as backend. It was fun
-        and I´ve learned a´lot! <br />
+        and did learned a lot! <br />
+        <br />
+        As a person I am pretty calm and always tries to do my best. I am loyal
+        and have high integrity. I am married and have two kids. I like to
+        train, but can not do it as often as before. I have decided to complete
+        a marathon during 2019 thou. I also like to play golf, padel, fishing
+        and to cook food.
+        <br />
         <br />
         Best <br />
         Andreas Hansson
       </P>
     </ParagraphWrapper>
-    <Interests isActiveRight={props.isActiveRight} />
   </CoverWrapper>
 );

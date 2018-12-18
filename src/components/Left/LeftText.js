@@ -44,7 +44,7 @@ const SkillEducationWrapper = styled('div')`
 
 const LeftUnder = props => (
   <LeftText>
-    <Button onClick={props.toggleState}>X</Button>
+    <Button onClick={props.toggleState}>&rarr;</Button>
     <ContactWorkWrapper>
       <Contact />
       <Work />

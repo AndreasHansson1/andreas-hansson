@@ -41,7 +41,7 @@ const RightUnder = props => (
       `}
       onClick={props.toggleState}
     >
-      X
+      &larr;
     </Button>
     <CoverText isActiveRight={props.isActiveRight} />
   </RightText>
