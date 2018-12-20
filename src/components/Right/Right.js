@@ -25,6 +25,8 @@ const Right = props => {
       <RightUnder
         toggleState={props.toggleState}
         isActiveRight={props.isActiveRight}
+        toggleStateLang={props.toggleStateLang}
+        toggleLang={props.toggleLang}
       />
 
       <div

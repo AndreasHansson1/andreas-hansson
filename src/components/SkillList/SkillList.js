@@ -26,7 +26,7 @@ const UL = styled('ul')`
 
 const LI = styled('li')`
   margin-bottom: 0.7rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   animation: slideIn 3s ease-in-out 0.5s;
   animation-fill-mode: backwards;
 

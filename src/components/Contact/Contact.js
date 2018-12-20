@@ -15,7 +15,7 @@ const ContactWrapper = styled('div')`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1rem;
+  padding: 0 1rem;
   margin: 0.5rem 0 0 0.5rem;
 `;
 

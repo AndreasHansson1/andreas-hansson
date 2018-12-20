@@ -10,6 +10,7 @@ const RightText = styled('div')`
   height: 100vh;
   width: 50%;
   position: relative;
+  border-left: 1px solid ${colors.black};
 `;
 
 const Button = styled('a')`
@@ -33,6 +34,27 @@ const Button = styled('a')`
   }
 `;
 
+const ButtonLang = styled('button')`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: all 0.2s;
+  :hover {
+    cursor: pointer;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  }
+  :active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+  }
+  :focus {
+    outline: none;
+  }
+`;
+
 const RightUnder = props => (
   <RightText>
     <Button
@@ -43,7 +65,11 @@ const RightUnder = props => (
     >
       &larr;
     </Button>
-    <CoverText isActiveRight={props.isActiveRight} />
+    <ButtonLang onClick={props.toggleStateLang}>En/Sv</ButtonLang>
+    <CoverText
+      isActiveRight={props.isActiveRight}
+      toggleLang={props.toggleLang}
+    />
   </RightText>
 );
 

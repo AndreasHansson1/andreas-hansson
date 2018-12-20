@@ -14,7 +14,7 @@ const WorkWrapper = styled('div')`
   margin: auto;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0 1rem;
   flex-wrap: wrap;
   margin: 0.5rem 0.5rem 0 0;
   border-radius: 0 0 10rem 0;

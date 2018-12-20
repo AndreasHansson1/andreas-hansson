@@ -8,17 +8,19 @@ import { colors } from './theme';
 
 const MainWrapper = styled('div')`
   background-color: ${colors.darkGrey};
-  max-width: 1400px;
+  max-width: 1200px;
   border-right: 1px solid ${colors.black};
   margin: auto;
   display: flex;
-  overflow: hidden;
+
+  box-shadow: 0 0 4rem black;
 `;
 
 class App extends Component {
   state = {
     isActiveRight: false,
-    isActiveLeft: false
+    isActiveLeft: false,
+    toggleLang: false
   };
 
   toggleStateRight = () => {
@@ -27,10 +29,18 @@ class App extends Component {
       isActiveRight: !currentState
     });
   };
+
   toggleStateLeft = () => {
     const currentState = this.state.isActiveLeft;
     this.setState({
       isActiveLeft: !currentState
+    });
+  };
+
+  toggleStateLang = () => {
+    const currentState = this.state.toggleLang;
+    this.setState({
+      toggleLang: !currentState
     });
   };
 
@@ -50,6 +60,8 @@ class App extends Component {
         <Right
           toggleState={this.toggleStateRight}
           isActiveRight={this.state.isActiveRight}
+          toggleStateLang={this.toggleStateLang}
+          toggleLang={this.state.toggleLang}
         />
       </MainWrapper>
     );

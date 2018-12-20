@@ -11,6 +11,8 @@ const LeftText = styled('div')`
   height: 100vh;
   width: 50%;
   position: relative;
+  overflow: hidden;
+  box-shadow: 0 2rem 4rem rgba(${colors.black}, 0.4);
 `;
 
 const Button = styled('a')`
@@ -18,7 +20,7 @@ const Button = styled('a')`
   color: ${colors.black},
   z-index: 5;
   top: 5px;
-  right: 5px;
+  right: 8px;
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-weight: 900;
