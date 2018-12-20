@@ -21,6 +21,15 @@
   transition: all 0.5s ease-in;
 }
 
-.rightSlider img:hover {
-  cursor: pointer;
+@media (max-width: 700px) {
+  .rightSlider {
+    width: 100%;
+    top: 100vh;
+    right: 0;
+  }
+  .rightSlider h2 {
+    position: absolute;
+    top: 2px;
+    right: 7px;
+  }
 }

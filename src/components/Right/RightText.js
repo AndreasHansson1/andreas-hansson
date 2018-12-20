@@ -11,6 +11,13 @@ const RightText = styled('div')`
   width: 50%;
   position: relative;
   border-left: 1px solid ${colors.black};
+
+  @media (max-width: 700px) {
+    width: 100%;
+    position: absolute;
+    top: 100vh;
+    right: 0;
+  }
 `;
 
 const Button = styled('a')`

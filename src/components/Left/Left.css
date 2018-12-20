@@ -19,10 +19,15 @@
   transition: all 0.5s ease-in;
 }
 
-.leftSlider img {
-  background: #fff;
-}
-
-.leftSlider img:hover {
-  cursor: pointer;
+@media (max-width: 700px) {
+  .leftSlider {
+    width: 100%;
+    top: 0;
+    right: 0;
+  }
+  .leftSlider h2 {
+    position: absolute;
+    bottom: 2px;
+    right: 7px;
+  }
 }

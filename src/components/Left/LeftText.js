@@ -13,6 +13,13 @@ const LeftText = styled('div')`
   position: relative;
   overflow: hidden;
   box-shadow: 0 2rem 4rem rgba(${colors.black}, 0.4);
+
+  @media (max-width: 700px) {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 `;
 
 const Button = styled('a')`

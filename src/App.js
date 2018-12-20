@@ -12,8 +12,12 @@ const MainWrapper = styled('div')`
   border-right: 1px solid ${colors.black};
   margin: auto;
   display: flex;
-
   box-shadow: 0 0 4rem black;
+  @media (max-width: 700px) {
+    display: flex;
+    flex-directions: column;
+    overflow: scroll;
+  }
 `;
 
 class App extends Component {
@@ -46,13 +50,7 @@ class App extends Component {
 
   render() {
     return (
-      <MainWrapper
-        css={css`
-          @media (min-width: 800px) {
-            flex-directions: column;
-          }
-        `}
-      >
+      <MainWrapper>
         <Left
           toggleState={this.toggleStateLeft}
           isActiveLeft={this.state.isActiveLeft}
