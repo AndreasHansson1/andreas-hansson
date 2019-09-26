@@ -24,7 +24,7 @@ const LeftText = styled('div')`
 
 const Button = styled('a')`
   position: absolute;
-  color: ${colors.black},
+  color: ${colors.black};
   z-index: 5;
   top: 5px;
   right: 8px;
