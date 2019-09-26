@@ -1,13 +1,13 @@
 .rightSlider {
   background-image: url('../../assets/images/prism.png');
   color: #fefefa;
-  height: 100vh;
+  min-height: 100vh;
   width: 50%;
   display: flex;
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 2;
+  z-index: 10;
   justify-content: flex-start;
   align-items: center;
   transition: all 0.5s ease-out;
@@ -24,8 +24,10 @@
 @media (max-width: 700px) {
   .rightSlider {
     width: 100%;
+    height: 100%;
     top: 100vh;
     right: 0;
+    bottom: 0;
   }
   .rightSlider h2 {
     position: absolute;

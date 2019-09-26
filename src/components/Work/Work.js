@@ -17,10 +17,16 @@ const WorkWrapper = styled('div')`
   flex-wrap: wrap;
   margin: 0.5rem 0.5rem 0 0;
   border-radius: 0 0 10rem 0;
+  @media (max-width: 700px) {
+    padding: 0 0.5rem;
+  }
 `;
 
 const H3 = styled('h3')`
   max-width: 55%;
+  @media (max-width: 700px) {
+    max-width: 100%;
+  }
 `;
 
 export const Work = () => (

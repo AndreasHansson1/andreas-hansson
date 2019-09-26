@@ -16,6 +16,16 @@ const RightText = styled('div')`
     position: absolute;
     top: 100vh;
     right: 0;
+    h2 {
+      font-size: 1.2rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+    p {
+      padding: 0;
+      margin: 5px 0;
+    }
   }
 `;
 

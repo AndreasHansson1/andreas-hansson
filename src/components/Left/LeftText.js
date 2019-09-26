@@ -13,12 +13,26 @@ const LeftText = styled('div')`
   position: relative;
   overflow: hidden;
   box-shadow: 0 2rem 4rem rgba(${colors.black}, 0.4);
+  p {
+    margin: 0.5rem 0;
+  }
 
   @media (max-width: 700px) {
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    h2 {
+      font-size: 1.2rem;
+    }
+    h3 {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+    }
+    p {
+      padding: 0;
+      margin: 5px 0;
+    }
   }
 `;
 
@@ -45,6 +59,10 @@ const Button = styled('a')`
 `;
 const ContactWorkWrapper = styled('div')`
   display: flex;
+  min-height: 65%;
+  @media (max-width: 700px) {
+    min-height: 55%;
+  }
 `;
 
 const SkillEducationWrapper = styled('div')`

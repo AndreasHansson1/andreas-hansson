@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from 'react';
 import styled from '@emotion/styled';
-import { jsx, css } from '@emotion/core';
+import { jsx } from '@emotion/core';
 import { colors } from '../../theme';
 
 const EducationWrapper = styled('div')`
