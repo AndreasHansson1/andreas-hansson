@@ -49,28 +49,37 @@ export const CoverText = props => (
         <H2>Personligt Brev</H2>
         <ParagraphWrapperSwe>
           <P>
-            Jag håller på att byta karriär just nu, från socialt arbete till
+            Jag har nyligen bytt karriär, från myndighetsutövning till
             webbutvecklare. Även om jag trivdes bra med mitt tidigare jobb är
-            jag otroligt glad att jag gör detta. Jag älskar att få lära mig nya
-            saker! Jag läser på
-            <A href="https://nackademin.se/utbildningar/frontend-utvecklare/">
+            jag otroligt glad att jag gjort detta. Jag älskar att få lära mig
+            nya saker! Jag gick ut 2-årig kurs som frontendutvecklare på
+            <A href='https://nackademin.se/utbildningar/frontend-utvecklare/'>
               {' '}
               Nackademin{' '}
             </A>{' '}
-            och är klar till sommaren 2019. Jag har gjort min första LIA oktober
-            - december 2018 på en webbyrå som heter Glomo. Där jobbade jag mest
-            med deras egna webbsida. Den är byggd med React på frontend och
-            Wordpress som backend. Det var roligt och jag lärde mig massor!{' '}
+            maj 2019. Efter det har jag jobbat som frontendutvecklare på en
+            konsultbyrå som heter We ahead. Där gjorde jag även min andra LIA.
+            Tekniker jag använde mest där var React (GatsbyJS, NextJS),
+            Javasctipt, HTML5, CSS3 (Emotion, Styled Components), Headless CMS
+            såsom Dato och Contentful, Git, GraphQL.
             <br />
             <br />
             Som person är jag ganska lugn av mig och försöker alltid göra mitt
             bästa. Jag är lojal och har hög integritet. Jag är gift och har två
             barn. Jag älskar att träna, även om det inte blir lika ofta som
-            tidigare. Jag har dock bestämt mig för att genomföra ett marathon
-            2019, vilket jag ser fram emot. Jag gillar också att spela golf,
+            tidigare. Jag tränar nu för att genomföra mitt första marathon våren
+            2020, vilket jag ser fram emot. Jag gillar också att spela golf,
             padel, fiska, laga mat och älskar att åka skidor.
             <br />
             <br />
+            <strong>Ett par saker jag gjort</strong> <br />
+            Sidoprojekt sommaren 2019. Byggt med GatsbyJS, GraphQL,
+            Gatsby-Image:{' '}
+            <A href='https://blanchard.netlify.com'> blanchard </A> <br />{' '}
+            <br />
+            Ex-jobb (tillsammans med en kurskamrat) våren 2019. Byggt med Vue
+            samt Firebase: <A href='https://www.carcalc.se/'> carcalc.se </A>
+            <br /> <br />
             Hälsningar <br />
             Andreas Hansson
           </P>
@@ -82,25 +91,32 @@ export const CoverText = props => (
 
         <ParagraphWrapperEn>
           <P>
-            Im am changing my career from social work to web development right
-            now and I am so glad I am doing this. Even though I liked my earlier
-            job, this is so much fun. I love to learn so many new things! I am
-            studying at
-            <A href="https://nackademin.se/utbildningar/frontend-utvecklare/">
+            Im have just changed my career from social work to web development
+            and I am so glad I did this. Even though I liked my earlier job,
+            this is so much fun. I love to learn so many new things! I studied 2
+            years to frontend developer at
+            <A href='https://nackademin.se/utbildningar/frontend-utvecklare/'>
               {' '}
               Nackademin{' '}
             </A>
-            I did one internship at a digital agency called Glomo at the end of
-            2018. At Glomo I mostly worked on their own site, built with React
-            on the frontend and Wordpress as backend. It was fun and did learn a
-            lot! <br />
+            . After that I worked at We ahead, a consultant company. Techniques
+            I worked with: React (GatsbyJS, NextJS), Javasctipt, HTML5, CSS3
+            (Emotion, Styled Components), Headless CMS (Dato, Contentful), Git,
+            GraphQL. <br />
             <br />
             As a person I am pretty calm and always tries to do my best. I am
             loyal and have high integrity. I am married and have two kids. I
-            like to workout, but can not do it as often as before. I have
-            decided to complete a marathon during 2019 after all and is excited
-            about that. I also like to play golf, padel, fishing, cook food and
-            loves to ski.
+            like to workout, but can not do it as often as before. Right now I
+            training to run a marathon spring 2020, and is excited about that. I
+            also like to play golf, padel, fishing, cook food and loves to ski.
+            <br />
+            <br />
+            <strong>A couple of things I have done</strong> <br />
+            Own project summer 2019. Built with GatsbyJS, GraphQL, Gatsby-Image:{' '}
+            <A href='https://blanchard.netlify.com'> blanchard </A> <br />{' '}
+            <br />
+            Ex-job (with a classmate) spring 2019. Built with Vue and Firebase:{' '}
+            <A href='https://www.carcalc.se/'> carcalc.se </A>
             <br />
             <br />
             Best <br />

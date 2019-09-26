@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from '@emotion/styled';
+import styled from '@emotion/styled';
 import LeftUnder from './LeftText';
 import { colors } from '../../theme';
 import './Left.css';

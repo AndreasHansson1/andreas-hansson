@@ -1,7 +1,6 @@
 /** @jsx jsx */
-import React from 'react';
 import styled from '@emotion/styled';
-import { jsx, css } from '@emotion/core';
+import { jsx } from '@emotion/core';
 import { colors } from '../../theme';
 
 const ListWrapper = styled('div')`
@@ -81,15 +80,13 @@ const H2 = styled('h2')`
 `;
 
 const listItems = [
-  'HTML/CSS',
+  'HTML5/CSS3',
   'JavaScript',
   'React',
   'Git',
-  'SASS',
   'Emotion',
-  'Node.js',
-  'Scrum',
-  'PHP/MySQL'
+  'DatoCMS',
+  'GraphQL'
 ];
 
 const list = listItems.map((item, index) => <LI key={index}>{item}</LI>);
