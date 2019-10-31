@@ -9,11 +9,12 @@ import { colors } from './theme';
 const MainWrapper = styled('div')`
   background-color: ${colors.darkGrey};
   max-width: 1200px;
+  min-height: 100vh;
   border-right: 1px solid ${colors.black};
   margin: auto;
   display: flex;
   box-shadow: 0 0 4rem black;
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
     display: flex;
     flex-directions: column;
     overflow: scroll;

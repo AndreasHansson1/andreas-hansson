@@ -10,21 +10,20 @@ const WorkWrapper = styled('div')`
   );
   color: ${colors.black};
   width: 90%;
-  margin: auto;
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
   flex-wrap: wrap;
-  margin: 0.5rem 0.5rem 0 0;
+  margin-right: 0.5rem;
   border-radius: 0 0 10rem 0;
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
     padding: 0 0.5rem;
   }
 `;
 
 const H3 = styled('h3')`
   max-width: 55%;
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
     max-width: 100%;
   }
 `;

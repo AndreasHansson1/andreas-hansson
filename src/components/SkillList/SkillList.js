@@ -14,7 +14,7 @@ const ListWrapper = styled('div')`
   padding: 0 1rem;
   flex-wrap: wrap;
   margin: 0.5rem;
-  overflow: hidden;
+  /* overflow: hidden; */
 `;
 
 const UL = styled('ul')`

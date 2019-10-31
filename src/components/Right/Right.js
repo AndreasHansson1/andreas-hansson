@@ -14,8 +14,10 @@ const H2 = styled('h2')`
   );
   -webkit-background-clip: text;
   color: transparent;
+  transition: transform 300ms ease-in;
   :hover {
     cursor: pointer;
+    transform: translateX(10px);
   }
 `;
 

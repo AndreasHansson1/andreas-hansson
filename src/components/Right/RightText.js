@@ -11,7 +11,7 @@ const RightText = styled('div')`
   position: relative;
   border-left: 1px solid ${colors.black};
 
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
     width: 100%;
     position: absolute;
     top: 100vh;

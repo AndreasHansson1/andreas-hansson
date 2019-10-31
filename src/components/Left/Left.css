@@ -19,7 +19,7 @@
   transition: all 0.5s ease-in;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .leftSlider {
     width: 100%;
     top: 0;

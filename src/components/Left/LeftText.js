@@ -17,7 +17,7 @@ const LeftText = styled('div')`
     margin: 0.5rem 0;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
     width: 100%;
     position: absolute;
     top: 0;
@@ -60,7 +60,7 @@ const Button = styled('a')`
 const ContactWorkWrapper = styled('div')`
   display: flex;
   min-height: 65%;
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
     min-height: 55%;
   }
 `;

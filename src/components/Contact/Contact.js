@@ -16,7 +16,7 @@ const ContactWrapper = styled('div')`
   flex-direction: column;
   justify-content: space-around;
   padding: 0 1rem;
-  margin: 0.5rem 0 0 0.5rem;
+  margin-left: 0.5rem;
 `;
 
 const A = styled('a')`
@@ -55,20 +55,20 @@ const A = styled('a')`
 
 export const Contact = () => (
   <ContactWrapper>
-    <A href="https://www.linkedin.com/in/andreas-hansson-/">
-      <i className="fab fa-linkedin fa-3x" title="LinkedIn" />
+    <A href='https://www.linkedin.com/in/andreas-hansson-/'>
+      <i className='fab fa-linkedin fa-3x' title='LinkedIn' />
     </A>
-    <A href="https://github.com/AndreasHansson1">
-      <i className="fab fa-github-square fa-3x" title="Github" />
+    <A href='https://github.com/AndreasHansson1'>
+      <i className='fab fa-github-square fa-3x' title='Github' />
     </A>
-    <A href="mailto:andreas_hansson@hotmail.se">
+    <A href='mailto:andreas_hansson@hotmail.se'>
       <i
-        className="fas fa-envelope-square fa-3x"
-        title="andreas_hansson@hotmail.se"
+        className='fas fa-envelope-square fa-3x'
+        title='andreas_hansson[at]hotmail.se'
       />
     </A>{' '}
     <A>
-      <i className="fas fa-phone-square fa-3x" title="0735-75 35 36" />
+      <i className='fas fa-phone-square fa-3x' title='0735-75 35 36' />
     </A>
   </ContactWrapper>
 );
