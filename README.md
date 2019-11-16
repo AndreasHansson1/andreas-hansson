@@ -2,4 +2,3 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Hobby project. My CV
 
-https://AndreasHansson1.github.io/andreas-hansson
